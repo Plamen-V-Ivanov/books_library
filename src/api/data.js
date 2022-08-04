@@ -9,7 +9,7 @@ export async function getAllBooks() {
 }
 
 export async function getBookById(id) {
-    return api.get('/data/books' + id);
+    return api.get('/data/books/' + id);
 }
 
 export async function getMyBooks(userId) {
@@ -21,11 +21,11 @@ export async function createBook(book) {
 }
 
 export async function editBook(id, book) {
-    return api.put('/data/books' + id, book);
+    return api.put('/data/books/' + id, book);
 }
 
 export async function deleteBook(id) {
-    return api.del('/data/books' + id);
+    return api.del('/data/books/' + id);
 }
 
 export async function likeBook(bookId) {
